@@ -1,0 +1,60 @@
+{
+	"name": "raw_ds_results",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "raw_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "results.csv",
+				"container": "fifa-raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "date",
+				"type": "String"
+			},
+			{
+				"name": "home_team",
+				"type": "String"
+			},
+			{
+				"name": "away_team",
+				"type": "String"
+			},
+			{
+				"name": "home_score",
+				"type": "String"
+			},
+			{
+				"name": "away_score",
+				"type": "String"
+			},
+			{
+				"name": "tournament",
+				"type": "String"
+			},
+			{
+				"name": "city",
+				"type": "String"
+			},
+			{
+				"name": "country",
+				"type": "String"
+			},
+			{
+				"name": "neutral",
+				"type": "String"
+			}
+		]
+	}
+}
